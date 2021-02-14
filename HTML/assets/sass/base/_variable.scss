@@ -1,0 +1,40 @@
+// Fonts Variable
+$font-family-primary: "Rajdhani", sans-serif;
+$font-family-secondary: "Roboto", sans-serif;
+$font-family-tertiary: "Titillium Web", sans-serif;
+
+// Fonts Weight Variable
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+
+// color
+$primary: #2f55d4;
+$secondary: #34d1bf;
+$white: #ffffff;
+$black: #000000;
+
+$colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "white": $white,
+  "black": $black,
+);
+
+// Gray
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-300: #efefef;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #6c757d;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+
+// Box Shadow
+$box-shadow: 0px 8px 35px 0px rgba($gray-700, 0.05);
+
+// Border Radius
+$border-radius-base: 4px;

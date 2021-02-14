@@ -1,0 +1,93 @@
+/*-- Margin Top --*/
+@for $i from 1 through 40 {
+  .mt-#{5 * $i} {
+    margin-top: 5px * $i;
+  }
+}
+
+/*-- Margin Bottom --*/
+@for $i from 1 through 40 {
+  .mb-#{5 * $i} {
+    margin-bottom: 5px * $i;
+  }
+}
+
+/*-- Margin Left --*/
+@for $i from 1 through 40 {
+  .ml-#{5 * $i} {
+    margin-left: 5px * $i;
+  }
+}
+
+/*-- Margin Right --*/
+@for $i from 1 through 40 {
+  .mr-#{5 * $i} {
+    margin-right: 5px * $i;
+  }
+}
+
+/*-- Padding Top --*/
+@for $i from 1 through 40 {
+  .pt-#{5 * $i} {
+    padding-top: 5px * $i;
+  }
+}
+
+/*-- Padding Bottom --*/
+@for $i from 1 through 40 {
+  .pb-#{5 * $i} {
+    padding-bottom: 5px * $i;
+  }
+}
+
+/*-- Padding Left --*/
+@for $i from 1 through 40 {
+  .pl-#{5 * $i} {
+    padding-left: 5px * $i;
+  }
+}
+
+/*-- Padding Right --*/
+@for $i from 1 through 40 {
+  .pr-#{5 * $i} {
+    padding-right: 5px * $i;
+  }
+}
+
+// Font Size
+@for $i from 1 through 200 {
+  .fs-#{1 * $i} {
+    font-size: 1px * $i;
+  }
+}
+
+// Position Vertical Horizontal Vertical
+@mixin center($position) {
+  position: absolute;
+
+  @if $position == "vertical" {
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  } @else if $position == "horizontal" {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translate(-50%);
+  } @else if $position == "both" {
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+}
+//   @include center(both);
+
+//   Font Size
+@mixin font-size($size) {
+  font-size: $size;
+  font-size: calculateRem($size);
+}
+//   @include font-size(50px)
