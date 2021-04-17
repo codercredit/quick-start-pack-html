@@ -1,16 +1,41 @@
 /*
 	*******************
-	Template name:  BildMax - Construction & Architecture HTML Template
-	Version:        1.0
-	Author:         Coder Credit
-	Author url:     https://themeforest.net/user/codercredit
 
-    ******** CSS INDEX ********
-    ********************/
+		Template name:  
+		Version:        1.0
+		Author:         Coder Credit
+		Author url:     https://themeforest.net/user/codercredit
 
-@import "./00-tools/reset";
-@import "./00-tools/default";
-@import "./01-helpers/variable";
-@import "./01-helpers/functions";
-@import "./01-helpers/mixins";
-@import "./02-basic/typography";
+	*******************
+
+    
+***** CSS INDEX *****
+********************/
+
+// 1. Base
+@import "./base/base";
+@import "./base/reset";
+@import "./base/typography";
+
+// 2. Layout
+@import "layout/navbar";
+@import "layout/header";
+@import "layout/sidebar";
+@import "layout/footer";
+
+// 3. Abstracts
+@import "abstracts/variable";
+@import "abstracts/colors";
+@import "abstracts/functions";
+@import "abstracts/mixins";
+@import "abstracts/responsive";
+
+// 4. Components
+@import "components/button";
+@import "components/alert";
+@import "components/modal";
+
+// 5. Themes
+@import "theme/light-theme";
+
+// 6. Vendors

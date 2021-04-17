@@ -1,47 +1,47 @@
 /*-- Margin Top --*/
-@for $i from 1 through 40 {
+@for $i from 1 through 20 {
   .mt-#{5 * $i} {
     margin-top: 5px * $i;
   }
 }
 
 /*-- Margin Bottom --*/
-@for $i from 1 through 40 {
+@for $i from 1 through 20 {
   .mb-#{5 * $i} {
     margin-bottom: 5px * $i;
   }
 }
 
 /*-- Margin Left --*/
-@for $i from 1 through 40 {
+@for $i from 1 through 20 {
   .ml-#{5 * $i} {
     margin-left: 5px * $i;
   }
 }
 
 /*-- Margin Right --*/
-@for $i from 1 through 40 {
+@for $i from 1 through 20 {
   .mr-#{5 * $i} {
     margin-right: 5px * $i;
   }
 }
 
 /*-- Padding Top --*/
-@for $i from 1 through 40 {
+@for $i from 1 through 20 {
   .pt-#{5 * $i} {
     padding-top: 5px * $i;
   }
 }
 
 /*-- Padding Bottom --*/
-@for $i from 1 through 40 {
+@for $i from 1 through 20 {
   .pb-#{5 * $i} {
     padding-bottom: 5px * $i;
   }
 }
 
 /*-- Padding Left --*/
-@for $i from 1 through 40 {
+@for $i from 1 through 20 {
   .pl-#{5 * $i} {
     padding-left: 5px * $i;
   }
@@ -85,9 +85,51 @@
 }
 //   @include center(both);
 
-//   Font Size
+//   Font Size Convert To Rem
 @mixin font-size($size) {
   font-size: $size;
   font-size: calculateRem($size);
 }
 //   @include font-size(50px)
+
+@mixin background-opacity($color, $opacity: 0.3) {
+  background: $color;
+  /* The Fallback */
+  background: rgba($color, $opacity);
+}
+
+// Transition
+@mixin transition($property: all, $duration: 0.4s, $ease: ease) {
+  transition: $property $duration $ease;
+  -webkit-transition: $property $duration $ease;
+  -moz-transition: $property $duration $ease;
+  -ms-transition: $property $duration $ease;
+}
+
+// absolute-left-top
+@mixin absolute-left-top($position: absolute, $left: 0, $top: 0) {
+  position: $position;
+  left: $left;
+  top: $top;
+}
+
+// absolute-left-bottom
+@mixin absolute-left-bottom($position: absolute, $left: 0, $bottom: 0) {
+  position: $position;
+  left: $left;
+  bottom: $bottom;
+}
+
+// absolute-right-top
+@mixin absolute-right-top($position: absolute, $right: 0, $top: 0) {
+  position: $position;
+  right: $right;
+  top: $top;
+}
+
+// absolute-right-bottom
+@mixin absolute-right-bottom($position: absolute, $right: 0, $bottom: 0) {
+  position: $position;
+  right: $right;
+  bottom: $bottom;
+}
