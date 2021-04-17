@@ -12,23 +12,23 @@
 ***** CSS INDEX *****
 ********************/
 
-// 1. Base
-@import "./base/base";
-@import "./base/reset";
-@import "./base/typography";
-
-// 2. Layout
-@import "layout/navbar";
-@import "layout/header";
-@import "layout/sidebar";
-@import "layout/footer";
-
-// 3. Abstracts
+// 1. Abstracts
 @import "abstracts/variable";
 @import "abstracts/colors";
 @import "abstracts/functions";
 @import "abstracts/mixins";
 @import "abstracts/responsive";
+
+// 2. Base
+@import "base/reset";
+@import "base/typography";
+@import "base/base";
+
+// 3. Layout
+@import "layout/navbar";
+@import "layout/header";
+@import "layout/sidebar";
+@import "layout/footer";
 
 // 4. Components
 @import "components/button";
