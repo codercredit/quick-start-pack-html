@@ -3,3 +3,10 @@ yarn.lock
 *.zip
 HTML-preview
 HTML-tf
+
+# Ignore IDE specific files
+.idea/
+.vscode/
+*.sw*
+
+.DS_Store
